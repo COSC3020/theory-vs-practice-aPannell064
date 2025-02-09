@@ -3,7 +3,7 @@
 - List 3 reasons why asymptotic analysis may be misleading with respect to
   actual performance in practice.
   
-      Probably most obvious answer is that constants get ignored when
+      Probably the most obvious answer is that constants get ignored when
       we are doing asymptotic analysis. There are going to be hidden
       term added onto the complexity and other constants that get multiplied
       with the time complexity. These do matter for finite values of n.
