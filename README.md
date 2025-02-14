@@ -8,13 +8,11 @@
     terms added onto the complexity and other constants that get multiplied
     with the time complexity. These do matter for finite values of n.
 
-    Asymptotic analysis looks at the complexity of a function as n
-    approaches infinity. However, if n were infinite, it would also
-    require infinite memory, which is obviously not realistic. If a program
-    uses too much memory, then the program will slow down significantly because
-    the computer won't be able to keep up. Therefore, while asymptotic complexity
-    describes the behavior as n gets very large, the computer resources might
-    cause an algorithm to perform disproportionately worse as n gets large. 
+    Computers usually have many different programs operating in the background.
+    If too much memory is being used, either through background tasks or the program
+    tbat is being run, then there will be some significant slow downs and the computer
+    won't be able to keep up. Asymptotic analysis is more focused on perfect conditions,
+    but it doesn't take hardware limitations into account. 
 
     You can write the same program in different languages with the same complexity,
     but changing the language or the compiler could make a program perform mysteriously
@@ -42,14 +40,15 @@
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
 
-    More elements means more memory usage. A computer with not very much memory and tasks
-    running in the background could be slowed greatly by using more memory, especially if
-    the objects populating the tree also demand a lot of memory. 
+    More elements means more memory usage. If most of a computer's memory is already being
+    used, it might not have enough to quickly proccess ten times as many elements. While this
+    wouldn't likely be a porblem if integers are being compared, real world applications often
+    require much more complex objects. Comparisons of large objects could quickly use up system
+    memory and reduce the performance of the search. 
 
     The implementation could also just not be very good. There could be memory leaks for
-    whatever reason. The search method could be implemented improperly. Additionally,
-    if the tree is filled with more complex objects, it might be slower to compare values
-    than it should be.
+    whatever reason. The search method could be implemented improperly. Comparisons of complex
+    objects, might take way more time and memory than they should. These would all reduce performance. 
 
     It is often necessary to run programs remotely. An unstable connection, low bandwidth or
     excessive activity on the network could greatly impact performance and could cause the
