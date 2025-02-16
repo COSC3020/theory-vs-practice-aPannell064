@@ -50,11 +50,7 @@
     whatever reason. The search method could be implemented improperly. Comparisons of complex
     objects, might take way more time and memory than they should. These would all reduce performance. 
 
-    Unless you know the exact location of the element in the tree, asymptotic analyisis wouldn't be
-    truly indicative of how long it would take to find the element in a different search tree. It's
-    possible that the element was very shallow in the 1,000 element tree, but deep in the 10,000 element
-    tree. A very unbalanced tree could make this worse by further increasing the difference between the
-    depths of the element in both trees. 
+    Many computers have systems that throttle the processor if the computer has to work harder. The increase in the amount of elements, especially if they are complex, could potentially lead to issues like thermal throttling, which would not be reflected by asymptotic analysis. 
 
 "I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. 
 All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that 
