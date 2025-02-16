@@ -50,7 +50,9 @@
     whatever reason. The search method could be implemented improperly. Comparisons of complex
     objects, might take way more time and memory than they should. These would all reduce performance. 
 
-    Many computers have systems that throttle the processor if the computer has to work harder. The increase in the amount of elements, especially if they are complex, could potentially lead to issues like thermal throttling, which would not be reflected by asymptotic analysis. 
+    Many computers have systems that throttle the processor if the computer has to work harder. The
+    increase in the amount of elements, especially if they are complex, could potentially lead to
+    issues like thermal throttling, which would not be reflected by asymptotic analysis. 
 
 "I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. 
 All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that 
